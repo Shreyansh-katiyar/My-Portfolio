@@ -1,0 +1,157 @@
+.experience-section {
+  padding: 100px 0;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #64ffda;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.company-tabs {
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid rgba(100, 255, 218, 0.2);
+}
+
+.company-tab {
+  background: none;
+  border: none;
+  color: #a8b2d1;
+  padding: 1rem 1.5rem;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.company-tab::before {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #64ffda;
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+
+.company-tab:hover {
+  color: #64ffda;
+  background-color: rgba(100, 255, 218, 0.1);
+}
+
+.company-tab.active {
+  color: #64ffda;
+}
+
+.company-tab.active::before {
+  transform: scaleY(1);
+}
+
+.experience-content {
+  padding: 0 1.5rem;
+}
+
+.experience-header {
+  margin-bottom: 1.5rem;
+}
+
+.experience-header h3 {
+  color: #64ffda;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience-header h4 {
+  color: #a8b2d1;
+  font-size: 1.2rem;
+}
+
+.experience-meta {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  color: #a8b2d1;
+}
+
+.experience-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.experience-meta svg {
+  color: #64ffda;
+}
+
+.responsibilities {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.responsibilities li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: #a8b2d1;
+  line-height: 1.6;
+}
+
+.responsibilities li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: #64ffda;
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .company-tabs {
+    flex-direction: row;
+    overflow-x: auto;
+    border-left: none;
+    border-bottom: 2px solid rgba(100, 255, 218, 0.2);
+    margin-bottom: 2rem;
+  }
+  
+  .company-tab {
+    padding: 0.8rem 1rem;
+    white-space: nowrap;
+  }
+  
+  .company-tab::before {
+    left: 0;
+    bottom: -2px;
+    top: auto;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+  }
+  
+  .company-tab.active::before {
+    transform: scaleX(1);
+  }
+  
+  .experience-content {
+    padding: 0;
+  }
+  
+  .experience-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

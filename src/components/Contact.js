@@ -42,22 +42,22 @@ const Contact = () => {
     {
       name: 'Email',
       icon: <FiMail />,
-      url: 'mailto:your.email@example.com' // Replace with your email
+      url: 'mailto:shreyansh.katiyar@gmail.com'
     },
     {
       name: 'GitHub',
       icon: <FiGithub />,
-      url: 'https://github.com/yourusername' // Replace with your GitHub profile
+      url: 'https://github.com/shreyanshkatiyar'
     },
     {
       name: 'LinkedIn',
       icon: <FiLinkedin />,
-      url: 'https://linkedin.com/in/yourusername' // Replace with your LinkedIn profile
+      url: 'https://linkedin.com/in/shreyanshkatiyar'
     },
     {
       name: 'Twitter',
       icon: <FiTwitter />,
-      url: 'https://twitter.com/yourusername' // Replace with your Twitter profile
+      url: 'https://twitter.com/shreyanshk_'
     }
   ];
 

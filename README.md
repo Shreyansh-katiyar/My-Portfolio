@@ -1,4 +1,4 @@
-# Personal Portfolio Website
+# Shreyansh Katiyar - Portfolio Website
 
 A modern, responsive portfolio website built with React, showcasing my skills, projects, and professional experience.
 
@@ -69,6 +69,19 @@ npm run deploy
 4. Add your own projects and experience
 5. Update social media links
 
+## Project Images
+
+The following image placeholders need to be replaced with actual screenshots:
+
+- `src/assets/images/codepen-editor.png`: Screenshot of the CodePen Editor project showing the multi-pane layout and code compilation
+- `src/assets/images/instagram-clone.png`: Screenshot of the Instagram Clone showing the feed, stories, and interaction features
+
+To replace the images:
+1. Take high-quality screenshots of your projects
+2. Crop them to 16:9 aspect ratio for consistency
+3. Save them as PNG files
+4. Replace the placeholder files in the `src/assets/images` directory
+
 ## License
 
 MIT License - feel free to use this template for your own portfolio!
@@ -76,6 +89,6 @@ MIT License - feel free to use this template for your own portfolio!
 ## Contact
 
 If you have any questions or suggestions, feel free to reach out:
-- Email: your.email@example.com
-- LinkedIn: [Your Name](https://linkedin.com/in/yourusername)
-- GitHub: [@yourusername](https://github.com/yourusername)
+- Email: shreyansh.katiyar@example.com
+- LinkedIn: [Shreyansh Katiyar](https://linkedin.com/in/shreyanshkatiyar)
+- GitHub: [@shreyanshkatiyar](https://github.com/shreyanshkatiyar)

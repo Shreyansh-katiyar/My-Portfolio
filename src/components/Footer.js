@@ -50,10 +50,10 @@ const Footer = () => {
                 transition={{ duration: 0.8 }}
               >
                 <p className="built-with">
-                  Built with <FiHeart className="heart-icon" /> using React
+                  Built with <FiHeart className="heart-icon" /> by Shreyansh Katiyar
                 </p>
                 <p className="copyright">
-                  {currentYear} John Doe. All rights reserved.
+                  &copy; {currentYear} Shreyansh Katiyar. All rights reserved.
                 </p>
               </motion.div>
 

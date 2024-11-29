@@ -1,89 +1,161 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import { FiCode, FiDatabase, FiLayout, FiTool } from 'react-icons/fi';
+import { 
+  FiCode, 
+  FiDatabase, 
+  FiLayout, 
+  FiServer,
+  FiGitBranch,
+  FiTool
+} from 'react-icons/fi';
 import '../styles/About.css';
 
 const About = () => {
-  const skills = {
-    'Frontend Development': {
+  const skills = [
+    {
+      category: 'Frontend Development',
       icon: <FiLayout />,
-      items: ['React', 'JavaScript (ES6+)', 'TypeScript', 'HTML5/CSS3', 'Redux', 'Next.js']
+      items: [
+        'React.js',
+        'Next.js',
+        'TypeScript',
+        'JavaScript (ES6+)',
+        'HTML5 & CSS3',
+        'Tailwind CSS',
+        'Material-UI',
+        'Redux'
+      ]
     },
-    'Backend Development': {
-      icon: <FiCode />,
-      items: ['Node.js', 'Express', 'Python', 'Django', 'RESTful APIs', 'GraphQL']
+    {
+      category: 'Backend Development',
+      icon: <FiServer />,
+      items: [
+        'Node.js',
+        'Express.js',
+        'Python',
+        'Django',
+        'FastAPI',
+        'RESTful APIs',
+        'GraphQL',
+        'WebSockets'
+      ]
     },
-    'Database & Cloud': {
+    {
+      category: 'Database & Cloud',
       icon: <FiDatabase />,
-      items: ['MongoDB', 'PostgreSQL', 'AWS', 'Firebase', 'Docker', 'Kubernetes']
+      items: [
+        'MongoDB',
+        'PostgreSQL',
+        'MySQL',
+        'Redis',
+        'AWS',
+        'Firebase',
+        'Docker',
+        'Kubernetes'
+      ]
     },
-    'Tools & Methods': {
+    {
+      category: 'Programming Languages',
+      icon: <FiCode />,
+      items: [
+        'JavaScript',
+        'TypeScript',
+        'Python',
+        'Java',
+        'C++',
+        'SQL',
+        'Bash',
+        'Go'
+      ]
+    },
+    {
+      category: 'Version Control & Tools',
+      icon: <FiGitBranch />,
+      items: [
+        'Git',
+        'GitHub',
+        'GitLab',
+        'JIRA',
+        'Postman',
+        'VS Code',
+        'Linux',
+        'Agile/Scrum'
+      ]
+    },
+    {
+      category: 'Other Skills',
       icon: <FiTool />,
-      items: ['Git', 'CI/CD', 'Agile', 'Jest', 'Webpack', 'VS Code']
+      items: [
+        'CI/CD',
+        'TDD',
+        'REST APIs',
+        'System Design',
+        'Data Structures',
+        'Algorithms',
+        'Problem Solving',
+        'Team Leadership'
+      ]
     }
-  };
+  ];
 
   return (
     <section id="about" className="about-section">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
         >
           <h2 className="section-title">About Me</h2>
-          <Row className="align-items-center">
-            <Col lg={6}>
-              <div className="about-text">
+          <Row className="justify-content-center">
+            <Col lg={8}>
+              <div className="about-content">
                 <p>
-                  Hello! I'm John, a full-stack developer based in New York City. I enjoy creating
-                  things that live on the internet, whether that be websites, applications, or
-                  anything in between. My goal is to always build products that provide pixel-perfect,
-                  performant experiences.
+                  Hello! I'm Shreyansh, a passionate Full Stack Developer with a strong foundation in both frontend and backend technologies. 
+                  I specialize in building scalable web applications that combine clean code with exceptional user experiences.
                 </p>
                 <p>
-                  Shortly after graduating from the University of Technology, I joined the
-                  engineering team at Upstart where I work on a wide variety of interesting and
-                  meaningful projects on a daily basis.
+                  With a background in Computer Science and hands-on experience in modern web technologies, 
+                  I enjoy tackling complex problems and turning innovative ideas into reality. I'm particularly 
+                  interested in performance optimization, clean architecture, and building accessible applications.
                 </p>
                 <p>
-                  Here are a few technologies I've been working with recently:
+                  When I'm not coding, you can find me exploring new technologies, contributing to open-source 
+                  projects, or sharing my knowledge through technical writing and mentoring.
                 </p>
               </div>
             </Col>
-            <Col lg={6}>
-              <div className="skills-container">
-                {Object.entries(skills).map(([category, { icon, items }], index) => (
-                  <motion.div
-                    key={category}
-                    className="skill-category"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                  >
-                    <div className="category-header">
-                      {icon}
-                      <h3>{category}</h3>
-                    </div>
-                    <div className="skills-grid">
-                      {items.map((skill, i) => (
-                        <motion.div
-                          key={i}
-                          className="skill-item"
-                          whileHover={{ scale: 1.05 }}
-                          whileTap={{ scale: 0.95 }}
-                        >
-                          {skill}
-                        </motion.div>
-                      ))}
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </Col>
+          </Row>
+
+          <h3 className="skills-title">Technical Skills</h3>
+          <Row className="skills-grid">
+            {skills.map((skillGroup, index) => (
+              <Col key={index} md={6} lg={4}>
+                <motion.div
+                  className="skill-category"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                >
+                  <div className="category-header">
+                    {skillGroup.icon}
+                    <h4>{skillGroup.category}</h4>
+                  </div>
+                  <ul className="skills-list">
+                    {skillGroup.items.map((skill, skillIndex) => (
+                      <motion.li
+                        key={skillIndex}
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        {skill}
+                      </motion.li>
+                    ))}
+                  </ul>
+                </motion.div>
+              </Col>
+            ))}
           </Row>
         </motion.div>
       </Container>

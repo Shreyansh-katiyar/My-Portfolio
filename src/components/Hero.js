@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import { Link } from 'react-scroll';
-import profileImage from '../assets/profile-placeholder.svg';
+import { FiArrowRight } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import '../styles/Hero.css';
 
 const Hero = () => {
@@ -10,46 +10,44 @@ const Hero = () => {
     <section id="home" className="hero-section">
       <Container>
         <Row className="align-items-center">
-          <Col md={6}>
+          <Col lg={6}>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.6 }}
+              className="hero-content"
             >
-              <h1>Hi, I'm <span className="highlight">John Doe</span></h1>
-              <h2>Full Stack Developer</h2>
-              <p>
-                Passionate about creating beautiful, responsive, and user-friendly web applications.
-                I specialize in building exceptional digital experiences that combine form and function.
+              <h1 className="greeting">Hi, I'm</h1>
+              <h2 className="name">Shreyansh Katiyar</h2>
+              <h3 className="title">Full Stack Developer</h3>
+              <p className="description">
+                I build exceptional digital experiences that combine elegant design with 
+                powerful functionality. Passionate about creating innovative solutions 
+                that make a difference.
               </p>
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Link
-                  to="projects"
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  className="cta-button"
-                >
-                  View My Work
+                <Link to="/projects" className="cta-button">
+                  View My Work <FiArrowRight className="arrow-icon" />
                 </Link>
               </motion.div>
             </motion.div>
           </Col>
-          <Col md={6}>
+          <Col lg={6}>
             <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="hero-image"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="profile-image-container"
             >
-              <div className="profile-img-container">
-                <img 
-                  src={profileImage}
-                  alt="John Doe"
-                  className="profile-img"
+              <div className="profile-image">
+                {/* Replace with your actual image */}
+                <img
+                  src="/path-to-your-image.jpg"
+                  alt="Shreyansh Katiyar"
+                  className="rounded-circle"
                 />
               </div>
             </motion.div>

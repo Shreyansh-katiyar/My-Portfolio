@@ -38,7 +38,7 @@ const Navbar = () => {
       <Container>
         <div className="navbar-content">
           <Link to="/" className="logo">
-            JD
+            SK
           </Link>
 
           <div className="nav-links-desktop">

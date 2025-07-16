@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { FiArrowRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import '../styles/Hero.css';
-
+import imageSrc from '../assets/image.jpg';
 const Hero = () => {
   return (
     <section id="home" className="hero-section">
@@ -45,7 +45,7 @@ const Hero = () => {
               <div className="profile-image">
                 {/* Replace with your actual image */}
                 <img
-                  src="/path-to-your-image.jpg"
+                  src={imageSrc}
                   alt="Shreyansh Katiyar"
                   className="rounded-circle"
                 />

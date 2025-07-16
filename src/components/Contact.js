@@ -42,22 +42,22 @@ const Contact = () => {
     {
       name: 'Email',
       icon: <FiMail />,
-      url: 'mailto:shreyansh.katiyar@gmail.com'
+      url: 'mailto:shreyansh.katiyar01@gmail.com'
     },
     {
       name: 'GitHub',
       icon: <FiGithub />,
-      url: 'https://github.com/shreyanshkatiyar'
+      url: 'https://github.com/Shreyansh-katiyar'
     },
     {
       name: 'LinkedIn',
       icon: <FiLinkedin />,
-      url: 'https://linkedin.com/in/shreyanshkatiyar'
+      url: 'https://www.linkedin.com/in/shreyansh-katiyar-5a3b70226/'
     },
     {
       name: 'Twitter',
       icon: <FiTwitter />,
-      url: 'https://twitter.com/shreyanshk_'
+      url: 'https://x.com/ShreyanshK_01'
     }
   ];
 

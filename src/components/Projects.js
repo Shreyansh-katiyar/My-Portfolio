@@ -9,7 +9,7 @@ const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [selectedProject, setSelectedProject] = useState(null);
 
-  const categories = ['All', 'Web Development', 'Full Stack'];
+  const categories = ['All', 'Web Development', 'Full Stack', 'Frontend'];
 
   const projects = [
     {
@@ -23,7 +23,7 @@ const Projects = () => {
           </div>
         </div>
       ),
-      technologies: ['React', 'JavaScript', 'CodeMirror', 'Babel', 'SASS'],
+      technologies: ['React', 'JavaScript'],
       features: [
         'Real-time code compilation and preview',
         'Multi-pane layout with resizable panels',
@@ -32,8 +32,30 @@ const Projects = () => {
         'Responsive design for all devices'
       ],
       github: 'https://github.com/Shreyansh-katiyar/CODE-PEN-EDITOR',
-      live: 'https://codepen-editor-sk.netlify.app',
       category: 'Web Development'
+    },
+    {
+      title: 'Calculator',
+      description: 'A modern and responsive calculator built with HTML, CSS, and JavaScript. Features basic arithmetic operations and a clean, intuitive interface.',
+      coverElement: (
+        <div className="project-cover calculator-cover">
+          <div className="cover-content">
+            <h3>Calculator</h3>
+            <p>Modern Calculator App</p>
+          </div>
+        </div>
+      ),
+      technologies: ['HTML5', 'CSS3', 'JavaScript'],
+      features: [
+        'Basic arithmetic operations',
+        'Responsive design',
+        'Modern UI with animations',
+        'Error handling',
+        'Keyboard support'
+      ],
+      github: 'https://github.com/Shreyansh-katiyar/CALCULATOR',
+      live:'https://willowy-mooncake-0d2d2a.netlify.app/',
+      category: 'Frontend'
     },
     {
       title: 'Instagram Clone',
@@ -57,7 +79,6 @@ const Projects = () => {
         'Responsive mobile-first design'
       ],
       github: 'https://github.com/Sa1864225/Social-Media-frontend',
-      live: 'https://instagram-clone-sk.herokuapp.com',
       category: 'Full Stack'
     }
   ];

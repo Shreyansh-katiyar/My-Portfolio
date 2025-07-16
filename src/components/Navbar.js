@@ -31,7 +31,7 @@ const Navbar = () => {
     { path: '/contact', label: 'Contact' }
   ];
 
-  const resumeLink = '/path-to-your-resume.pdf'; // Update with your resume path
+  const resumeLink = 'https://drive.google.com/file/d/1vnClLfO7Q2GiAuXCT6PKJVmkyQozgCtu/view?usp=sharing'; // Update with your resume path
 
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>

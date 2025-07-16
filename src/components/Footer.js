@@ -15,7 +15,7 @@ const Footer = () => {
             <div className="footer-content">
               <div className="footer-social">
                 <motion.a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/Shreyansh-katiyar"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ y: -5 }}
@@ -24,7 +24,7 @@ const Footer = () => {
                   <FiGithub />
                 </motion.a>
                 <motion.a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://www.linkedin.com/in/shreyansh-katiyar-5a3b70226/"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ y: -5 }}
@@ -33,7 +33,7 @@ const Footer = () => {
                   <FiLinkedin />
                 </motion.a>
                 <motion.a
-                  href="https://twitter.com/yourusername"
+                  href="https://x.com/ShreyanshK_01"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ y: -5 }}

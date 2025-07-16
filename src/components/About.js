@@ -18,13 +18,8 @@ const About = () => {
       icon: <FiLayout />,
       items: [
         'React.js',
-        'Next.js',
-        'TypeScript',
-        'JavaScript (ES6+)',
+        'JavaScript',
         'HTML5 & CSS3',
-        'Tailwind CSS',
-        'Material-UI',
-        'Redux'
       ]
     },
     {
@@ -33,12 +28,7 @@ const About = () => {
       items: [
         'Node.js',
         'Express.js',
-        'Python',
-        'Django',
-        'FastAPI',
         'RESTful APIs',
-        'GraphQL',
-        'WebSockets'
       ]
     },
     {
@@ -46,13 +36,8 @@ const About = () => {
       icon: <FiDatabase />,
       items: [
         'MongoDB',
-        'PostgreSQL',
         'MySQL',
-        'Redis',
         'AWS',
-        'Firebase',
-        'Docker',
-        'Kubernetes'
       ]
     },
     {
@@ -60,13 +45,8 @@ const About = () => {
       icon: <FiCode />,
       items: [
         'JavaScript',
-        'TypeScript',
         'Python',
-        'Java',
-        'C++',
         'SQL',
-        'Bash',
-        'Go'
       ]
     },
     {
@@ -75,22 +55,15 @@ const About = () => {
       items: [
         'Git',
         'GitHub',
-        'GitLab',
-        'JIRA',
         'Postman',
         'VS Code',
-        'Linux',
-        'Agile/Scrum'
       ]
     },
     {
       category: 'Other Skills',
       icon: <FiTool />,
       items: [
-        'CI/CD',
-        'TDD',
         'REST APIs',
-        'System Design',
         'Data Structures',
         'Algorithms',
         'Problem Solving',
@@ -113,16 +86,11 @@ const About = () => {
               <div className="about-content">
                 <p>
                   Hello! I'm Shreyansh, a passionate Full Stack Developer with a strong foundation in both frontend and backend technologies. 
-                  I specialize in building scalable web applications that combine clean code with exceptional user experiences.
                 </p>
                 <p>
                   With a background in Computer Science and hands-on experience in modern web technologies, 
                   I enjoy tackling complex problems and turning innovative ideas into reality. I'm particularly 
                   interested in performance optimization, clean architecture, and building accessible applications.
-                </p>
-                <p>
-                  When I'm not coding, you can find me exploring new technologies, contributing to open-source 
-                  projects, or sharing my knowledge through technical writing and mentoring.
                 </p>
               </div>
             </Col>

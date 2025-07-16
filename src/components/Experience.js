@@ -7,41 +7,17 @@ import '../styles/Experience.css';
 const Experience = () => {
   const experiences = [
     {
-      company: 'Tech Solutions Inc.',
-      title: 'Senior Full Stack Developer',
-      period: 'Jan 2022 - Present',
-      location: 'San Francisco, CA',
+      company: 'CODSOFT',
+      title: 'Web Developer Intern',
+      period: 'Nov 2024 - Nov 2024',
+      location: 'Remote',
       responsibilities: [
-        'Led a team of 5 developers in building and maintaining enterprise-level web applications',
-        'Implemented microservices architecture using Node.js and Docker, improving system scalability',
-        'Reduced application load time by 40% through performance optimization techniques',
-        'Mentored junior developers and conducted code reviews to maintain high code quality'
-      ]
-    },
-    {
-      company: 'Digital Innovations',
-      title: 'Full Stack Developer',
-      period: 'Mar 2020 - Dec 2021',
-      location: 'New York, NY',
-      responsibilities: [
-        'Developed and maintained multiple React-based web applications',
-        'Implemented RESTful APIs using Node.js and Express',
-        'Integrated third-party services and APIs for payment processing and data analytics',
-        'Collaborated with UX designers to implement responsive and accessible interfaces'
-      ]
-    },
-    {
-      company: 'StartUp Labs',
-      title: 'Frontend Developer',
-      period: 'Jun 2018 - Feb 2020',
-      location: 'Boston, MA',
-      responsibilities: [
-        'Built responsive web applications using React and Redux',
-        'Implemented unit tests using Jest and React Testing Library',
-        'Optimized frontend performance and improved lighthouse scores',
-        'Participated in daily stand-ups and sprint planning meetings'
+        'Designed and developed responsive web applications using modern frameworks and technologies',
+        'Debugged and resolved issues in existing codebases to improve functionality and user experience',
+        'Gained practical experience in [HTML, CSS, JavaScript, React, etc.]'
       ]
     }
+    
   ];
 
   const [activeTab, setActiveTab] = useState(0);
